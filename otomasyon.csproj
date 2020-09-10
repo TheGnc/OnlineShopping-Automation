@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A150AD24-4152-4FDC-934A-78A2805C2EBD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>otomasyon</RootNamespace>
+    <AssemblyName>otomasyon</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.9.9\Assemblies\v4.5\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aldiklarim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aldiklarim.Designer.cs">
+      <DependentUpon>aldiklarim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="altkategori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="altkategori.Designer.cs">
+      <DependentUpon>altkategori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="altkategoriguncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="altkategoriguncelle.Designer.cs">
+      <DependentUpon>altkategoriguncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="baglan.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kargoguncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kargoguncelle.Designer.cs">
+      <DependentUpon>kargoguncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kategori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kategori.Designer.cs">
+      <DependentUpon>kategori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kategoriguncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kategoriguncelle.Designer.cs">
+      <DependentUpon>kategoriguncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="k_indirim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="k_indirim.Designer.cs">
+      <DependentUpon>k_indirim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="k_satisok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="k_satisok.Designer.cs">
+      <DependentUpon>k_satisok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="k_urunlerim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="k_urunlerim.Designer.cs">
+      <DependentUpon>k_urunlerim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="marka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marka.Designer.cs">
+      <DependentUpon>marka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="markaguncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="markaguncelle.Designer.cs">
+      <DependentUpon>markaguncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="satisok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satisok.Designer.cs">
+      <DependentUpon>satisok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="satisyap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satisyap.Designer.cs">
+      <DependentUpon>satisyap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sifrele.cs" />
+    <Compile Include="siparisler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="siparisler.Designer.cs">
+      <DependentUpon>siparisler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="t_indirim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="t_indirim.Designer.cs">
+      <DependentUpon>t_indirim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="urunekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="urunekle.Designer.cs">
+      <DependentUpon>urunekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="urunler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="urunler.Designer.cs">
+      <DependentUpon>urunler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uye.Designer.cs">
+      <DependentUpon>uye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yonetici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yonetici.Designer.cs">
+      <DependentUpon>yonetici.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="aldiklarim.resx">
+      <DependentUpon>aldiklarim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="altkategori.resx">
+      <DependentUpon>altkategori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="altkategoriguncelle.resx">
+      <DependentUpon>altkategoriguncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kargoguncelle.resx">
+      <DependentUpon>kargoguncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kategori.resx">
+      <DependentUpon>kategori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kategoriguncelle.resx">
+      <DependentUpon>kategoriguncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="k_indirim.resx">
+      <DependentUpon>k_indirim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="k_satisok.resx">
+      <DependentUpon>k_satisok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="k_urunlerim.resx">
+      <DependentUpon>k_urunlerim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marka.resx">
+      <DependentUpon>marka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="markaguncelle.resx">
+      <DependentUpon>markaguncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="satisok.resx">
+      <DependentUpon>satisok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="satisyap.resx">
+      <DependentUpon>satisyap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="siparisler.resx">
+      <DependentUpon>siparisler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="t_indirim.resx">
+      <DependentUpon>t_indirim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="urunekle.resx">
+      <DependentUpon>urunekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="urunler.resx">
+      <DependentUpon>urunler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uye.resx">
+      <DependentUpon>uye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yonetici.resx">
+      <DependentUpon>yonetici.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
